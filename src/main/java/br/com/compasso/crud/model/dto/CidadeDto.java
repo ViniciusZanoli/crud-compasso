@@ -1,11 +1,12 @@
 package br.com.compasso.crud.model.dto;
 
 import br.com.compasso.crud.model.Cidade;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CidadeDto {
   private Long id;
   private String nome;

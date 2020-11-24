@@ -1,6 +1,7 @@
 package br.com.compasso.crud.model.dto;
 
 import br.com.compasso.crud.model.Cliente;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.time.LocalDate;
 import java.util.List;
