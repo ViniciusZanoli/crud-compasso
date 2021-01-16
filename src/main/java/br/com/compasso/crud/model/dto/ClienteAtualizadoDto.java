@@ -36,12 +36,12 @@ public class ClienteAtualizadoDto {
     this.cidade_id = cliente.getCidade().getId().toString();
   }
 
-  public static List<br.com.compasso.crud.model.dto.ClienteDto> converteList(List<Cliente> clientes) {
-    return clientes.stream().map(br.com.compasso.crud.model.dto.ClienteDto::new).collect(Collectors.toList());
+  public static List<ClienteDto> converteList(List<Cliente> clientes) {
+    return clientes.stream().map(ClienteDto::new).collect(Collectors.toList());
   }
 
-  public static br.com.compasso.crud.model.dto.ClienteDto converter(Cliente cliente) {
-    return new br.com.compasso.crud.model.dto.ClienteDto(cliente);
+  public static ClienteDto converter(Cliente cliente) {
+    return new ClienteDto(cliente);
   }
 
   public Long getId() {

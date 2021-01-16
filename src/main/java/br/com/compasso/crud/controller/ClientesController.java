@@ -1,5 +1,6 @@
 package br.com.compasso.crud.controller;
 
+import br.com.compasso.crud.converter.DozerConverter;
 import br.com.compasso.crud.model.Cliente;
 import br.com.compasso.crud.model.dto.AtualizaClienteDto;
 import br.com.compasso.crud.model.dto.ClienteAtualizadoDto;
@@ -7,19 +8,21 @@ import br.com.compasso.crud.model.dto.ClienteDto;
 import br.com.compasso.crud.model.dto.ClienteForm;
 import br.com.compasso.crud.repository.CidadesRepository;
 import br.com.compasso.crud.repository.ClientesRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.data.domain.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityExistsException;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
-import java.util.List;
 import java.util.Optional;
 
 import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.ignoreCase;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 
 @RestController
 @RequestMapping("/clientes")
@@ -32,18 +35,36 @@ public class ClientesController {
   private CidadesRepository cidadesRepository;
 
   @GetMapping
-  public List<ClienteDto> listar() {
-    List<Cliente> clientes = clientesRepository.findAll();
-    return ClienteDto.converteList(clientes);
+  public Page<ClienteDto> listar(
+          @RequestParam(value="page", defaultValue="0") int page,
+          @RequestParam(value="limit", defaultValue="12") int limit,
+          @RequestParam(value="direction", defaultValue = "asc") String direction,
+          @RequestParam(value="orderBy", defaultValue = "id") String orderBy) {
+
+    var sortDirection = "desc".equalsIgnoreCase(direction) ? Sort.Direction.DESC : Sort.Direction.ASC;
+
+    Pageable pageable = PageRequest.of(page, limit, Sort.by(sortDirection, orderBy));
+
+    var pagina = clientesRepository.findAll(pageable);
+
+    return pagina.map(this::converteToCienteDto);
+  }
+
+  private ClienteDto converteToCienteDto(Cliente cliente) {
+    return DozerConverter.parseObject(cliente, ClienteDto.class);
   }
 
   @GetMapping("/{id}")
-  public ResponseEntity<ClienteDto> detalhe(@PathVariable Long id) {
-    Optional<Cliente> cliente = clientesRepository.findById(id);
+  public ClienteDto detalhe(@PathVariable Long id) {
 
-    return cliente.map(value -> ResponseEntity.
-            ok(new ClienteDto(value))).
-            orElseGet(() -> ResponseEntity.notFound().build());
+    var entity = clientesRepository.findById(id).
+            orElseThrow(() -> new EntityExistsException("No records found for this ID"));
+
+    ClienteDto clienteDto = DozerConverter.parseObject(entity, ClienteDto.class);
+
+    clienteDto.add(linkTo(methodOn(ClientesController.class).detalhe(id)).withSelfRel());
+
+    return clienteDto;
   }
 
   @GetMapping("/nome")
