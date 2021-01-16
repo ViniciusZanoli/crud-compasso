@@ -5,35 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="843904fb-a424-49e9-a88c-96a63bef31df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_dozermapper_dozer_core_6_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/converter/DozerConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/compasso/crud/converter/DozerConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/compasso/crud/converter/mocks/MockClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/CrudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/CrudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/controller/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/controller/ClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/Cidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteAtualizadoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteAtualizadoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/repository/ClientesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/repository/ClientesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1khoiBwcJcquNYBzOjPonkxoiVf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.compasso.crud" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CrudApplication">
     <configuration name="CrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.compasso.crud.CrudApplication" />
       <module name="crud" />
@@ -47,9 +103,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DozerConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compasso.crud.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.compasso.crud.converter" />
+      <option name="MAIN_CLASS_NAME" value="br.com.compasso.crud.converter.DozerConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CrudApplication" />
+      <item itemvalue="JUnit.DozerConverterTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CrudApplication" />
+        <item itemvalue="JUnit.DozerConverterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -64,22 +140,16 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1606163295718">
-      <screen x="0" y="0" width="1920" height="1045" />
-    </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1045@0.0.1920.1045" timestamp="1606163295718" />
-    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1606163295717">
-      <screen x="0" y="0" width="1920" height="1045" />
-    </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1920.1045@0.0.1920.1045" timestamp="1606163295717" />
-    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1606163295716">
-      <screen x="0" y="0" width="1920" height="1045" />
-    </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1920.1045@0.0.1920.1045" timestamp="1606163295716" />
-    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1606163295718">
-      <screen x="0" y="0" width="1920" height="1045" />
-    </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1920.1045@0.0.1920.1045" timestamp="1606163295718" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
