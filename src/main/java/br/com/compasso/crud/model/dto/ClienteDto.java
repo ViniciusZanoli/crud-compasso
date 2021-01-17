@@ -1,6 +1,9 @@
 package br.com.compasso.crud.model.dto;
 
+import br.com.compasso.crud.model.Cidade;
 import br.com.compasso.crud.model.Cliente;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.github.dozermapper.core.Mapping;
 
 
@@ -9,21 +12,22 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.hateoas.RepresentationModel;
 
-
+@JsonPropertyOrder({"id"})
 public class ClienteDto extends RepresentationModel{
 
   @Mapping("id")
+  @JsonProperty("id")
   private Long key;
   private String nomeCompleto;
   private String sexo;
   private LocalDate dataDeNacimento;
   private int idade;
-  private CidadeDto cidade;
+  private Cidade cidade;
 
   public ClienteDto() {
   }
 
-  public ClienteDto(Long key, String nomeCompleto, String sexo, LocalDate dataDeNacimento, int idade, CidadeDto cidade) {
+  public ClienteDto(Long key, String nomeCompleto, String sexo, LocalDate dataDeNacimento, int idade, Cidade cidade) {
     this.key = key;
     this.nomeCompleto = nomeCompleto;
     this.sexo = sexo;
@@ -38,7 +42,8 @@ public class ClienteDto extends RepresentationModel{
     this.sexo = cliente.getSexo();
     this.dataDeNacimento = cliente.getDataDeNacimento();
     this.idade = cliente.getIdade();
-    this.cidade = CidadeDto.converter(cliente.getCidade());
+    //    this.cidade = CidadeDto.converter(cliente.getCidade());
+    this.cidade = cliente.getCidade();
   }
 
   public static List<ClienteDto> converteList(List<Cliente> clientes) {
@@ -89,11 +94,11 @@ public class ClienteDto extends RepresentationModel{
     this.idade = idade;
   }
 
-  public CidadeDto getCidade() {
+  public Cidade getCidade() {
     return cidade;
   }
 
-  public void setCidade(CidadeDto cidade) {
+  public void setCidade(Cidade cidade) {
     this.cidade = cidade;
   }
 }
