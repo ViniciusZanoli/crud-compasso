@@ -5,9 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="843904fb-a424-49e9-a88c-96a63bef31df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crud/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crud Compasso.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/CrudApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/controller/CidadesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/controller/ClientesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/converter/DozerConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/Cidade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/AtualizaClienteDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/CidadeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteAtualizadoDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ClienteForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/model/dto/ErroDeFormularioDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/repository/CidadesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/repository/ClientesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/compasso/crud/validation/ErroDeValidacaoHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/compasso/crud/CrudApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/compasso/crud/converter/DozerConverterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/compasso/crud/converter/mocks/MockClients.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
